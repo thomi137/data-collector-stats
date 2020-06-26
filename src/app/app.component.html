@@ -42,6 +42,8 @@
     <p>1st Quartile: {{trial.getQuantile(.25) | number: '1.1-3'}}</p>
     <p>Median: {{trial.getMedian() | number: '1.1-3'}}</p>
     <p>3rd Quartile: {{trial.getQuantile(.75) | number: '1.1-3'}}</p> 
+    <p>IQR: {{trial.getQuantile(.75) - trial.getQuantile(.25) | number: '1.1-3'}}</p> 
+
   </div>
 
 </div>
